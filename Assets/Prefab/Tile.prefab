@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2497668551095636993}
   - component: {fileID: 6538196573926400961}
   - component: {fileID: 4016113576783226482}
+  - component: {fileID: 7510189654373886677}
   m_Layer: 0
   m_Name: Tile
   m_TagString: Untagged
@@ -119,3 +120,92 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 529fa08d57e97ad45acb08afa43fad0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7510189654373886677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6353458186890654807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba2bb843a56737347be898862d14c65e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noiseMapGeneration: {fileID: 4016113576783226482}
+  tileRenderer: {fileID: 2497668551095636993}
+  meshFilter: {fileID: 8072513755950062901}
+  meshCollider: {fileID: 6538196573926400961}
+  mapScale: 10
+  terrainTypes:
+  - name: water
+    height: 0.4
+    color: {r: 0.13333334, g: 0.3764706, b: 0.7921569, a: 0}
+  - name: grass
+    height: 0.6
+    color: {r: 0.078431375, g: 0.44313726, b: 0.039215688, a: 0}
+  - name: mountain
+    height: 1
+    color: {r: 0.3882353, g: 0.26666668, b: 0.26666668, a: 0}
+  heightMultiplier: 5
+  heightCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.26582056
+      value: -0.0007146746
+      inSlope: -0.045411177
+      outSlope: -0.045411177
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.41663915
+      value: -0.0011979584
+      inSlope: 0.024734154
+      outSlope: 0.024734154
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.48812604
+      value: 0.028453466
+      inSlope: 0.977116
+      outSlope: 0.977116
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  waves:
+  - seed: 5613
+    frequency: 1
+    amplitude: 1
+  - seed: 9551
+    frequency: 0.5
+    amplitude: 2
+  - seed: 6712
+    frequency: 0.25
+    amplitude: 4
