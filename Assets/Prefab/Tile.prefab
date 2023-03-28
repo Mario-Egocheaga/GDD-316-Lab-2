@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6538196573926400961}
   - component: {fileID: 4016113576783226482}
   - component: {fileID: 7510189654373886677}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,10 +140,10 @@ MonoBehaviour:
   terrainTypes:
   - name: water
     height: 0.4
-    color: {r: 0.13333334, g: 0.3764706, b: 0.7921569, a: 0}
+    color: {r: 0.37855276, g: 0.4056604, b: 0.017221425, a: 0}
   - name: grass
     height: 0.6
-    color: {r: 0.078431375, g: 0.44313726, b: 0.039215688, a: 0}
+    color: {r: 0.045492653, g: 0.3584906, b: 0.01183696, a: 0}
   - name: mountain
     height: 1
     color: {r: 0.3882353, g: 0.26666668, b: 0.26666668, a: 0}
